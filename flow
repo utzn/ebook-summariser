@@ -1,9 +1,88 @@
-<mxfile host="app.diagrams.net" modified="2023-05-23T18:55:07.514Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/113.0" version="21.3.3" etag="n1tVY1gK1bqR3gjyqnVV" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-23T19:07:24.255Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/113.0" etag="PTtc7Ojvk8iyXtt1dyFg" version="21.3.3" type="github">
   <diagram name="Page-1" id="a3uD3woVCsmJG6amEv_6">
-    <mxGraphModel>
+    <mxGraphModel dx="587" dy="498" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="8ft_6FHKjU2aoWv0XGqn-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8ft_6FHKjU2aoWv0XGqn-15" target="8ft_6FHKjU2aoWv0XGqn-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8ft_6FHKjU2aoWv0XGqn-15" value="summarise.py book1.pdf book2.epub book3.mobi" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="280" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8ft_6FHKjU2aoWv0XGqn-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8ft_6FHKjU2aoWv0XGqn-16" target="8ft_6FHKjU2aoWv0XGqn-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="310" />
+              <mxPoint x="520" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8ft_6FHKjU2aoWv0XGqn-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8ft_6FHKjU2aoWv0XGqn-16" target="8ft_6FHKjU2aoWv0XGqn-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="310" />
+              <mxPoint x="520" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8ft_6FHKjU2aoWv0XGqn-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8ft_6FHKjU2aoWv0XGqn-16" target="8ft_6FHKjU2aoWv0XGqn-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8ft_6FHKjU2aoWv0XGqn-16" value="scan book contents into dict (chapter -&amp;gt; content)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8ft_6FHKjU2aoWv0XGqn-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="8ft_6FHKjU2aoWv0XGqn-17" target="8ft_6FHKjU2aoWv0XGqn-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8ft_6FHKjU2aoWv0XGqn-17" value="scan epub" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8ft_6FHKjU2aoWv0XGqn-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="8ft_6FHKjU2aoWv0XGqn-19" target="8ft_6FHKjU2aoWv0XGqn-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="330" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="720" y="400" />
+              <mxPoint x="720" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8ft_6FHKjU2aoWv0XGqn-19" value="scan PDF" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8ft_6FHKjU2aoWv0XGqn-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8ft_6FHKjU2aoWv0XGqn-22" target="8ft_6FHKjU2aoWv0XGqn-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8ft_6FHKjU2aoWv0XGqn-22" value="scan mobi" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8ft_6FHKjU2aoWv0XGqn-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8ft_6FHKjU2aoWv0XGqn-25" target="8ft_6FHKjU2aoWv0XGqn-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8ft_6FHKjU2aoWv0XGqn-25" value="check if kindle connected" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8ft_6FHKjU2aoWv0XGqn-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8ft_6FHKjU2aoWv0XGqn-29" target="8ft_6FHKjU2aoWv0XGqn-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8ft_6FHKjU2aoWv0XGqn-29" value="ask user if they want to import highlights" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8ft_6FHKjU2aoWv0XGqn-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8ft_6FHKjU2aoWv0XGqn-31" target="8ft_6FHKjU2aoWv0XGqn-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8ft_6FHKjU2aoWv0XGqn-31" value="scan kindle highlights for HLs belonging to book" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8ft_6FHKjU2aoWv0XGqn-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8ft_6FHKjU2aoWv0XGqn-33" target="8ft_6FHKjU2aoWv0XGqn-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8ft_6FHKjU2aoWv0XGqn-33" value="&lt;div&gt;summarise book chapters&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8ft_6FHKjU2aoWv0XGqn-35" value="&lt;div&gt;convert summarised dict into markdown&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
