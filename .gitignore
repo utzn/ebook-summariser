@@ -1,0 +1,11 @@
+# Ignore all pdf files
+*.pdf
+
+# Ignore all epub files
+*.epub
+
+# Ignore all mobi files
+*.mobi
+
+# Ignore the test folder (and everything inside it)
+test/
