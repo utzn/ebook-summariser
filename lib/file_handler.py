@@ -4,7 +4,7 @@ import PyPDF2
 
 
 def get_file_contents(filenames):
-    file_contents = []
+    files = []
     for file_name in filenames:
         # Initialize file path
         file_path = ""
@@ -19,21 +19,18 @@ def get_file_contents(filenames):
         # Read file
         if file_path:
             try:
-                # Check file extension and read accordingly
-                if file_path.endswith('.pdf'):
-                    with open(file_path, 'rb') as file:
-                        reader = PyPDF2.PdfFileReader(file)
-                        contents = ''
-                        for page in range(reader.getNumPages()):
-                            contents += reader.getPage(page).extractText()
-                        file_contents.append({"filetype": "pdf", "contents": contents})
-
-                elif file_path.endswith('.epub'):
+                if file_path.endswith('.epub'):
                     book = ebooklib.epub.read_epub(file_path)
+                    title = book.get_metadata('DC', 'title')
+                    try:
+                        subtitle = title[1][0]
+                    except IndexError:
+                        subtitle = ""
+                    title = title[0][0]
                     contents = ''
                     for item in book.get_items_of_type(ebooklib.ITEM_DOCUMENT):
                         contents += item.get_content().decode('utf-8')
-                    file_contents.append({"filetype": "epub", "contents": contents})
+                    files.append({"filetype": "epub", "title": title, "contents": contents})
 
                 else:
                     print(f"File type not supported: {file_path}")
@@ -47,4 +44,16 @@ def get_file_contents(filenames):
         else:
             print(f"File not found: {file_name}")
             exit(1)
-    return file_contents
+    return files
+
+
+def duplicate_check(files, target_dir):
+    duplicates = []
+    for file in files:
+        for filename in os.listdir(target_dir):
+            if file["title"] in filename:
+                duplicates.append(file)
+    if len(duplicates):
+        print("Found the following duplicates, skipping: \n{}".format(file["title"] for file in duplicates))
+        return [file for file in files if file not in duplicates]
+    return files
